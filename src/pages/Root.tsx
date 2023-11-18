@@ -6,43 +6,50 @@ function Root() {
 			id: "0",
 			text: "ТГ-канал",
 			href: "https://t.me/philainel_channel",
-			icon: "bi-telegram"
+			icon: "bi-telegram",
+			accentColor: "#2BA5E0"
 		},
 		{
 			id: "1",
 			text: "GitHub",
 			href: "https://github.com/philainel",
-			icon: "bi-github"
+			icon: "bi-github",
+			accentColor: "#000000"
 		},
 		{
 			id: "2",
 			text: "Spotify",
 			href: "https://open.spotify.com/user/zzizbtt9g6zynmcu7wuj5d5p5?si=a5f610866a174fa9",
-			icon: "bi-spotify"
+			icon: "bi-spotify",
+			accentColor: "#1DB954"
 		},
 		{
 			id: "3",
 			text: "Steam",
 			href: "https://steamcommunity.com/id/Philainel/",
-			icon: "bi-steam"
+			icon: "bi-steam",
+			accentColor: "#1b2838"
 		},
 		{
 			id: "4",
 			text: "YouTube",
 			href: "https://youtube.com/@philainel",
-			icon: "bi-youtube"
+			icon: "bi-youtube",
+			accentColor: "#FF0000"
 		},
 		{
 			id: "5",
 			text: "Twitter",
 			href: "https://twiiter.com/philainel",
-			icon: "bi-twitter"
+			icon: "bi-twitter",
+			accentColor: "#1DA1F2"
 		},
 		{
 			id: "6",
 			text: "Reddit",
 			href: "https://reddit.com/u/Philainel",
-			icon: "bi-reddit"
+			icon: "bi-reddit",
+			accentColor: "#FF5700"
 		}
 	]
 	return (
@@ -57,7 +64,7 @@ function Root() {
 				<div className="links">
 					{links.map(l =>
 						<a href={l.href} className="link" target="_blank" id={l.id}>
-							<i className={l.icon} />
+							<i className={l.icon} style={{color: l.accentColor}} />
 							<span className="desc">{l.text}</span>
 						</a>
 					)}

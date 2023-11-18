@@ -1,3 +1,4 @@
+// @ts-ignore
 import {Routes, Route, Link, BrowserRouter} from "react-router-dom";
 import './App.scss'
 import Root from "./pages/Root.tsx";
@@ -31,6 +32,7 @@ function App() {
 						<Routes>
 							{routes.map(r => <Route key={r.path} path={r.path} element={r.element}/>)}
 						</Routes>
+						<div className="filler last"></div>
 					</div>
 				</BrowserRouter>
 			</div>

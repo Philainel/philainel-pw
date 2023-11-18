@@ -22,10 +22,11 @@
 
 		> .links {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
 			grid-gap: .5em;
 			align-items: center;
 			margin-top: 0.4em;
+			user-select: none;
 
 			> a.link {
 				font-size: 2em;
@@ -41,7 +42,7 @@
 				text-decoration: none;
 
 				&:hover {
-					transform: translate3d(0, -0.3em, 0);
+					transform: translate3d(0, -0.2em, 0);
 				}
 
 				& > * {
